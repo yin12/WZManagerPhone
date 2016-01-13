@@ -127,4 +127,4 @@ public class Algorithm {
         BigDecimal one = new BigDecimal("1");
         return b.divide(one, scale, BigDecimal.ROUND_HALF_UP).doubleValue();
     }
-};
+}
