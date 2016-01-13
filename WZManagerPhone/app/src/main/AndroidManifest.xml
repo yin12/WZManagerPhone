@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="icss.wz.manager"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--打电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--通话权限-->
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <!--友盟统计+更新 权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.InitActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity
+            android:name=".ui.task.TaskDailyDetailActivity"
+            android:label="@string/task_daily_detail_view"
+            android:windowSoftInputMode="adjustNothing"/>
+        //工作总结
+        <activity
+            android:name=".ui.record.RecordGZZJActivity"
+            android:label="@string/record_gzzj"
+            android:windowSoftInputMode="adjustResize"
+            />
+
+        //规格跟踪
+        <activity
+            android:name=".ui.query.QueryGGGZActivity"
+            android:label="@string/query_gggz"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        //卷烟跟踪
+        <activity
+            android:name=".ui.query.QueryJYGZActivity"
+            android:label="@string/query_jygz"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        //订货跟踪-表1
+        <activity
+            android:name=".ui.query.QueryDHGZFActivity"
+            android:label="@string/query_dhgz"
+            android:windowSoftInputMode="adjustNothing"/>
+        //订货跟踪-表2
+        <activity
+            android:name=".ui.query.QueryDHGZSActivity"
+            android:label="@string/query_dhgz"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        //本周未订
+        <activity
+            android:name=".ui.query.QueryBZWDActivity"
+            android:label="@string/query_bzwd"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        //拜访进度—表1
+        <activity
+            android:name=".ui.query.QueryBFJDFActivity"
+            android:label="@string/query_bfjd"
+            android:windowSoftInputMode="adjustNothing"/>
+        //计划户数——信息
+        <activity
+            android:name=".ui.query.BFJDPlanInfoActivity"
+            android:label="@string/query_bfjd"
+            android:windowSoftInputMode="adjustNothing"/>
+        //拜访户数—信息
+        <activity
+            android:name=".ui.query.BFJDRealityInfoActivity"
+            android:label="@string/query_bfjd"
+            android:windowSoftInputMode="adjustNothing"/>
+        //进度——信息
+        <activity
+            android:name=".ui.query.BFJDScheduleActivity"
+            android:label="@string/query_bfjd"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name=".ui.task.TaskAssignDetailActivity"
+            android:label="@string/task_assign_detail_view"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity
+            android:name=".ui.notice.NoticeDetailActivity"
+            android:label="@string/notice_detail_view"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity
+            android:name=".ui.task.ClientAnalysisActivity"
+            android:label="@string/client_analysis_view"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity
+            android:name=".ui.task.ClientCollectActivity"
+            android:label="@string/client_collect_view"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity
+            android:name=".ui.task.CaptureActivity"
+            android:label="@string/task_daily_todo_1"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name=".ui.task.ClientFeedbackActivity"
+            android:label="@string/client_feedback_view"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!--友盟统计-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="566fb1b7e0f55a12d4000b17"/>
+
+        <!--友盟更新-->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"/>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+    </application>
+
+</manifest>

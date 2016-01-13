@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dl"
+            android:orientation="horizontal"
+            android:padding="@dimen/content_padding_small">
+
+            <TextView
+                style="@style/MyTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gggj_table_situation"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_margin_ssmall"
+            android:orientation="vertical">
+
+            <View
+                style="@style/MyTextLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    style="@style/MyTextLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_margin_ssmall"
+                    android:layout_marginTop="@dimen/content_margin_ssmall"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/content_txt_size_normal"
+                    />
+
+                <View
+                    style="@style/MyTextLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_margin_ssmall"
+                    android:layout_marginTop="@dimen/content_margin_ssmall"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/client_nom"
+                    android:textSize="@dimen/content_txt_size_normal"/>
+
+                <View
+                    style="@style/MyTextLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_margin_ssmall"
+                    android:layout_marginTop="@dimen/content_margin_ssmall"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/check_in_time"
+                    android:textSize="@dimen/content_txt_size_normal"/>
+
+                <View
+                    style="@style/MyTextLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_margin_ssmall"
+                    android:layout_marginTop="@dimen/content_margin_ssmall"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/sign_back_time"
+                    android:textSize="@dimen/content_txt_size_normal"/>
+
+                <View
+                    style="@style/MyTextLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_margin_ssmall"
+                    android:layout_marginTop="@dimen/content_margin_ssmall"
+                    android:layout_weight="5.5"
+                    android:gravity="center"
+                    android:text="@string/visit_state"
+                    android:textSize="@dimen/content_txt_size_normal"/>
+
+                <View
+                    style="@style/MyTextLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+            <View
+                style="@style/MyTextLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <icss.wz.manager.view.MyListView
+        android:id="@+id/my_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

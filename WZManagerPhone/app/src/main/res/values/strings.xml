@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">梧州客户经理</string>
+
+    <!--登陆-->
+    <string name="login">登录</string>
+    <string name="login_name">帐号</string>
+    <string name="login_pass">密码</string>
+    <string name="login_input_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-.@</string>
+
+    <!--TAG-->
+    <string name="main_tag">主页面</string>
+
+    <array name="main_pages">
+        <item>工作任务</item>
+        <item>通知公告</item>
+        <item>查询分析</item>
+        <item>工作总结</item>
+    </array>
+
+    <!--主页面：工作任务-->
+
+    <string name="task_daily_detail_view">日常任务详情</string>
+    <string name="task_assign_detail_view">指派任务详情</string>
+
+    <string name="task_daily_header_1">地址</string>
+    <string name="task_daily_header_2">电话</string>
+    <string name="task_daily_header_3">经营业态</string>
+    <string name="task_daily_header_4">许可证号</string>
+    <string name="task_daily_header_5">订货量</string>
+
+    <string name="task_daily_todo_1">扫码签到</string>
+    <string name="task_daily_todo_2">手工签到</string>
+
+
+    <string name="client_analysis_view">经营分析</string>
+    <string name="client_collect_view">终端采集</string>
+    <string name="client_feedback_view">客户反馈</string>
+
+    <!--经营分析-->
+    <array name="analysis_pages">
+        <item>卷烟结构</item>
+        <item>卷烟价段</item>
+        <item>盈利</item>
+        <item>订单</item>
+        <item>商定总量</item>
+    </array>
+
+    <!--客户反馈-->
+    <string name="feedback_content">反馈内容</string>
+    <string name="feedback_hint">请输入反馈内容</string>
+
+    <string name="sub_title_ggs">规格数</string>
+    <string name="sub_title_gjl">购进量</string>
+    <string name="sub_title_zb">占比</string>
+    <string name="sub_title_dhl">订货量</string>
+    <string name="sub_title_je">金额</string>
+    <string name="sub_title_ml">毛利</string>
+    <string name="sub_title_ddrq">订单日期</string>
+    <string name="sub_title_sdl">商定量</string>
+    <string name="sub_title_wcl">完成率</string>
+
+
+    <!--主页面：通知公告-->
+
+    <string name="notice_detail_view">通知公告详情</string>
+
+    <!--主页面：查询分析-->
+
+    <string name="query_bfjd">拜访进度</string>
+    <string name="query_dhgz">订货跟踪</string>
+    <string name="query_bzwd">本周未订</string>
+    <string name="query_jygz">卷烟跟踪</string>
+    <string name="query_gggz">规格跟踪</string>
+
+    <array name="query_grids">
+        <item>@string/query_bfjd</item>
+        <item>@string/query_dhgz</item>
+        <item>@string/query_bzwd</item>
+        <item>@string/query_jygz</item>
+    </array>
+
+    <!--主页面：工作日志-->
+    <string name="record_gzzj">工作总结</string>
+    <array name="record_grids">
+        <item>@string/record_gzzj</item>
+    </array>
+
+    <!--加载提示-->
+    <string name="load_check_update">正在检测更新</string>
+
+    <!--消息提示-->
+    <string name="notice_login_failed">登录失败，请重新登陆</string>
+    <string name="notice_login_success">登录成功</string>
+
+    <string name="notice_load_empty">没有找到结果</string>
+
+    <string name="sure">确认</string>
+    <string name="save">保存</string>
+    <string name="submit">提交</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+
+    <string name="drawer_close"></string>
+    <string name="drawer_open"></string>
+    <string name="network_no_available">网络不可用,打开网络设置?</string>
+    <string name="barcode_hint">请将条形码或二维码置于取景框内</string>
+    <string name="reminder_message">请输入搜索关键字</string>
+
+    <!--列表信息-->
+    <string name="client_nom">客户姓名</string>
+    <string name="check_in_time">签到时间</string>
+    <string name="sign_back_time">签退时间</string>
+    <string name="visit_state">状态</string>
+    <string name="gggj_table_situation">拜访情况</string>
+    <string name="gggj_table_problem">工作展开情况及存在的问题</string>
+    <string name="edit_gggj_table_problem">请输入工作展开情况及存在的问题的内容</string>
+
+    <string name="client_name">客户名称</string>
+    <string name="quantity_of_goods">订货量</string>
+    <string name="amount">金额</string>
+    <string name="single_number">单条数</string>
+    <string name="goods_number">单品数</string>
+    <string name="summation">合计</string>
+
+    <string name="order_name">订单名称</string>
+    <string name="order_date">订单日期</string>
+
+    <string name="plan_number">计划户数</string>
+    <string name="visit_number">拜访户数</string>
+    <string name="schedule_size">进度</string>
+    <string name="client_address">地址</string>
+    <string name="client_code">简码</string>
+    <string name="date">日期</string>
+
+    <string name="cigarette_specifications">卷烟规格:</string>
+    <string name="what_order">是否订购:</string>
+</resources>

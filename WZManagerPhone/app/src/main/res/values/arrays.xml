@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_content">
+        <item>-请选择- </item>
+        <item>卷烟1</item>
+        <item>卷烟2</item>
+        <item>卷烟3</item>
+        <item>卷烟4</item>
+        <item>卷烟5</item>
+        <item>卷烟6</item>
+        <item>卷烟7</item>
+        <item>卷烟卷烟A</item>
+        <item>卷烟卷烟B</item>
+        <item>卷烟卷烟C</item>
+        <item>卷烟D100000112</item>
+        <item>卷烟卷烟E</item>
+    </string-array>
+</resources>

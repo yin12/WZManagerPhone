@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/content_padding_xlarge"
+              android:paddingRight="@dimen/content_padding_xlarge">
+
+    <TextView
+        android:id="@+id/schedule_week"
+        style="@style/MyTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_margin_large"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_margin_large"
+        android:layout_marginTop="@dimen/content_margin_normal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/plan_number"
+                style="@style/MyTextSubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plan_number"/>
+
+            <TextView
+                android:id="@+id/schedule_plan_number"
+                style="@style/MyTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_margin_small"
+                android:textColor="@color/sys_normal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/reality_number"
+                style="@style/MyTextSubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_number"/>
+
+            <TextView
+                android:id="@+id/schedule_reality_number"
+                style="@style/MyTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_margin_small"
+                android:textColor="@color/sys_normal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/size"
+                style="@style/MyTextSubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/schedule_size"/>
+
+            <TextView
+                android:id="@+id/schedule_size"
+                style="@style/MyTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_margin_small"
+                android:textColor="@color/sys_normal"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dl"
+        android:visibility="visible"/>
+
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="10dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/schedule_week"-->
+    <!--style="@style/MyTextName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--/>-->
+    <!--&lt;!&ndash;android:text="2015-12-22 第1周"&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/plan_number"-->
+    <!--style="@style/MyTextSubName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_below="@id/schedule_week"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:text="计划户数"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/schedule_plan_number"-->
+
+    <!--style="@style/MyTextName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@id/schedule_week"-->
+    <!--android:layout_marginRight="15dp"-->
+
+    <!--/>-->
+    <!--&lt;!&ndash;android:text="30"&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/reality_number"-->
+    <!--style="@style/MyTextSubName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_below="@id/plan_number"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:text="拜访户数"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/schedule_reality_number"-->
+    <!--style="@style/MyTextName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@id/schedule_plan_number"-->
+    <!--android:layout_marginRight="15dp"-->
+
+
+    <!--/>-->
+    <!--&lt;!&ndash;android:text="26"&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/size"-->
+    <!--style="@style/MyTextSubName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_below="@id/reality_number"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:text="进度"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/schedule_size"-->
+    <!--style="@style/MyTextName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@id/schedule_reality_number"-->
+    <!--android:layout_marginRight="15dp"-->
+
+    <!--/>-->
+    <!--&lt;!&ndash;android:text="86.67%"&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/silver"/>-->
+    <!--</LinearLayout>-->

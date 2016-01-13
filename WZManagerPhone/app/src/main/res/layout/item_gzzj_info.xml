@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/MyTextLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/client_id"
+            style="@style/MyTextName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin_small"
+            android:layout_marginTop="@dimen/content_margin_small"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <View
+            style="@style/MyTextLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/client_name"
+            style="@style/MyTextName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin_small"
+            android:layout_marginTop="@dimen/content_margin_small"
+            android:layout_weight="4"
+            android:gravity="center"
+            />
+
+        <View
+            style="@style/MyTextLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/check_in_time"
+            style="@style/MyTextName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin_small"
+            android:layout_marginTop="@dimen/content_margin_small"
+            android:layout_weight="4"
+            android:gravity="center"
+            />
+
+        <View
+            style="@style/MyTextLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/sign_back_time"
+            style="@style/MyTextName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin_small"
+            android:layout_marginTop="@dimen/content_margin_small"
+            android:layout_weight="4"
+            android:gravity="center"
+            />
+
+        <View
+            style="@style/MyTextLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/type_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/schedule_type"
+                style="@style/MyTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/content_margin_small"
+                android:layout_marginTop="@dimen/content_margin_small"
+                android:gravity="center"
+                android:text="已拜访"
+                android:textColor="@color/belizehole"
+                android:visibility="gone"
+                />
+            <!--android:visibility="gone"-->
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <!--android:visibility="gone"-->
+
+                <RadioButton
+                    android:id="@+id/is_button"
+                    style="@style/MyTextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="延期"/>
+
+                <RadioButton
+                    android:id="@+id/no_button"
+                    style="@style/MyTextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="其他原因"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            style="@style/MyTextLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/MyTextLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

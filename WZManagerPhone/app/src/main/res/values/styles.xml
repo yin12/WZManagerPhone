@@ -1,0 +1,198 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/sys_normal</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/sys_normal</item>
+        <item name="colorAccent">@color/sys_normal</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/sys_background</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">@dimen/content_txt_size_small</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <!--<item name="android:listDivider">@drawable/divider_bg</item>-->
+
+    </style>
+
+    <!--FLOATING ACTION BUTTON STYLE-->
+    <style name="MyFabButton" parent="Widget.Design.FloatingActionButton">
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="fabSize">normal</item>
+    </style>
+
+    <!--TOOL BAR STYLLE-->
+    <style name="MyActionBar" parent="Widget.AppCompat.Toolbar">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/MyTitleTextAppearance</item>
+        <item name="subtitleTextAppearance">@style/MySubTitleTextAppearance</item>
+    </style>
+
+    <style name="MyCollapsingToolbarLayout" parent="Widget.Design.CollapsingToolbar">
+
+        <item name="contentScrim">?attr/colorPrimary</item>
+        <item name="expandedTitleMarginBottom">@dimen/content_margin_xlarge</item>
+        <item name="expandedTitleTextAppearance">@style/MyExpandedTitleTextAppearance</item>
+        <item name="collapsedTitleTextAppearance">@style/MyTitleTextAppearance</item>
+    </style>
+
+    <style name="MyTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/content_txt_size_normal</item>
+    </style>
+
+    <style name="MySubTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/content_txt_size_ssmall</item>
+        <item name="android:textColor">@color/color_hint_white</item>
+    </style>
+
+
+    <style name="MyExpandedTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/content_txt_size_xlarge</item>
+    </style>
+
+
+    <!--TAB LAYOUT STYLE-->
+    <style name="MyTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/tab_indicator</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <!--<item name="tabPaddingStart">12dp</item>-->
+        <!--<item name="tabPaddingEnd">12dp</item>-->
+        <!--<item name="android:layout_marginLeft">12dp</item>-->
+        <!--<item name="android:layout_marginRight">12dp</item>-->
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyBottomTabLayout" parent="Widget.Design.TabLayout">
+        <!--<item name="tabMaxWidth">@dimen/tab_max_width</item>-->
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <!--<item name="android:background">@color/vl</item>-->
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">@color/sys_normal</item>
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyMenuTextStyle">
+        <item name="android:textSize">@dimen/content_txt_size_normal</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/content_txt_size_small</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <!--TEXTINPUT STYLE-->
+    <style name="MyTextInputLayout" parent="Widget.Design.TextInputLayout">
+
+    </style>
+
+    <style name="MyEditText" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textColorHint">@color/color_hint</item>
+        <item name="android:textSize">@dimen/content_txt_size_normal</item>
+    </style>
+
+    <style name="MyButton" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/content_txt_size_normal</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="MyTextTitle">
+        <item name="android:textSize">@dimen/content_txt_size_large</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="MyTextName">
+        <item name="android:textSize">@dimen/content_txt_size_small</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="MyViewLine">
+        <item name="android:textColor">@color/dl</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">65dp</item>
+    </style>
+
+    <style name="MyTextSubName">
+        <item name="android:textSize">@dimen/content_txt_size_ssmall</item>
+        <item name="android:textColor">@color/color_hint</item>
+    </style>
+
+    <style name="MyTextTip">
+        <item name="android:textSize">@dimen/content_txt_size_sssmall</item>
+        <item name="android:textColor">@color/color_hint</item>
+    </style>
+
+    <style name="MyTextContent">
+        <item name="android:textSize">@dimen/content_txt_size_small</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:alpha">0.8</item>
+    </style>
+
+    <style name="MyTextLine">
+        <item name="android:background">@color/dl</item>
+    </style>
+
+    <style name="MyImageView">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="MyTextTableTitle">
+        <item name="android:textSize">@dimen/content_txt_size_small</item>
+        <item name="android:textColor">@color/color_text</item>
+        <!--<item name="android:background">@color/translucent</item>-->
+    </style>
+
+
+    <style name="MyTableContent">
+        <item name="android:textSize">@dimen/content_txt_size_ssmall</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">加载中，请稍候</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+
+    <style name="MySpinnerSize">
+        <item name="android:textSize">@dimen/content_txt_size_small</item>
+    </style>
+    <!--下拉样式-->
+    <style name="spinner_style">
+        <item name="android:background">@mipmap/i_icon_login_week</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+
+</resources>

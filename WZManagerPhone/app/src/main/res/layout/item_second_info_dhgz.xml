@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/content_padding_xlarge"
+              android:paddingRight="@dimen/content_padding_xlarge">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="订单卷烟"/>
+
+        <TextView
+            android:id="@+id/cigarette_orders"
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+
+            />
+        <!--android:text="致青春"-->
+
+        <TextView
+            android:id="@+id/number"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name"
+            android:layout_marginTop="6dp"
+            android:text="订货量"/>
+
+        <TextView
+            android:id="@+id/goods_quantity"
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/cigarette_orders"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            />
+        <!--android:text="20"-->
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/number"
+            android:layout_marginTop="6dp"
+            android:text="金额"/>
+
+        <TextView
+            android:id="@+id/order_amount"
+
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/goods_quantity"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            />
+        <!--android:text="240.00"-->
+
+        <TextView
+            android:id="@+id/data"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/amount"
+            android:layout_marginTop="6dp"
+            android:text="订单日期"/>
+
+        <TextView
+            android:id="@+id/order_date"
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/order_amount"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            />
+        <!--android:text="2015-12-23"-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver"/>
+</LinearLayout>

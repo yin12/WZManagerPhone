@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--普通版主色调-->
+    <color name="sys_normal">#019696</color>
+    <color name="sys_select">#007d7d</color>
+    <color name="sys_background">#fafafa</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="translucent">#75000000</color>
+
+    <color name="btn_select">#60bebebe</color>
+
+    <!--TAG-->
+    <color name="tab_indicator">@color/white</color>
+
+    <!--文字-->
+    <color name="color_text">#1a1a1a</color>
+    <color name="color_hint">#777777</color>
+    <color name="color_text_white">#ffffff</color>
+    <color name="color_hint_white">#95ffffff</color>
+
+    <!--分割线-->
+    <color name="dl">#cbcbcb</color>
+    <color name="vl">#f0f0f0</color>
+
+    <!--下拉刷新颜色-->
+    <color name="orange">#FF9900</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+
+    <!-- new color -->
+    <!-- 近绿色 -->
+    <color name="turquoise">#1ABC9C</color>
+    <color name="greensea">#16A085</color>
+    <!-- 草绿色 -->
+    <color name="emerland">#2ECC71</color>
+    <color name="nephritis">#27AE60</color>
+    <!-- 灰白色 -->
+    <color name="clouds">#ECF0F1</color>
+    <color name="silver">#BDC3C7</color>
+    <!-- 深灰色 -->
+    <color name="concrete">#95A5A6</color>
+    <color name="asbestos">#7F8C8D</color>
+    <!-- 暗灰色 -->
+    <color name="darkgray">#d6d6d6</color>
+    <!-- 淡蓝色 -->
+    <color name="belizehole">#2980B9</color>
+    <color name="peterriver">#3498DB</color>
+
+    <!-- 橘黄色 -->
+    <color name="sunflower">#F1C40F</color>
+    <color name="oranges">#F39C12</color>
+    <!-- 橘红色 -->
+    <color name="carrot">#E67E22</color>
+    <color name="pumpkin">#D35400</color>
+    <!-- 深红色 -->
+    <color name="alizarin">#E74C3C</color>
+    <color name="pomegranate">#C0392B</color>
+
+    <!--通讯录列表颜色-->
+    <integer-array name="contact_colors">
+        <item>@color/turquoise</item>
+        <item>@color/emerland</item>
+        <item>@color/concrete</item>
+        <item>@color/belizehole</item>
+        <item>@color/sunflower</item>
+        <item>@color/carrot</item>
+        <item>@color/alizarin</item>
+    </integer-array>
+
+    <color name="spots_dialog_color">@android:color/holo_blue_dark</color>
+    <!--选择日期背景色-->
+    <color name="date_color">#1de7e7e7</color>
+</resources>

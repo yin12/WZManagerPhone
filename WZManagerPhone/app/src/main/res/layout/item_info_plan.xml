@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/content_padding_xlarge"
+              android:paddingRight="@dimen/content_padding_xlarge">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/client_name"/>
+
+        <TextView
+            android:id="@+id/client_name"
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            />
+        <!--android:text="客户A(0000111*)"-->
+
+        <TextView
+            android:id="@+id/data"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name"
+            android:layout_marginTop="2dp"
+            android:text="@string/date"/>
+
+        <TextView
+            android:id="@+id/plan_data"
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/client_name"
+            android:layout_marginRight="10dp"
+
+            />
+        <!--android:text="2015-12-22"-->
+
+        <TextView
+            android:id="@+id/code"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/data"
+            android:layout_marginTop="2dp"
+            android:text="@string/client_code"/>
+
+        <TextView
+            android:id="@+id/plan_code"
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/plan_data"
+            android:layout_marginRight="10dp"
+
+            />
+        <!--android:text="AHWZH"-->
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/MyTextSubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/code"
+            android:layout_marginTop="2dp"
+            android:text="@string/client_address"
+            />
+
+        <TextView
+            android:id="@+id/client_address"
+            style="@style/MyTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/plan_code"
+            android:layout_marginRight="10dp"
+
+            />
+        <!--android:text="梧州市********************"-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver"/>
+</LinearLayout>
